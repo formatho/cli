@@ -1,5 +1,7 @@
 # formatho — privacy-first dev tools in your terminal
 
+<p align="center"><img src=".github/logo.png" width="120" alt="Formatho logo"></p>
+
 100% local. Zero dependencies. Zero telemetry. Your data never leaves your machine.
 
 Web versions with 100+ tools: **[formatho.com](https://formatho.com)**
