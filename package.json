@@ -1,0 +1,13 @@
+{
+  "name": "formatho",
+  "version": "0.1.0",
+  "description": "Privacy-first developer tools in your terminal. 100% local, zero dependencies, zero telemetry — by formatho.com",
+  "bin": { "formatho": "./bin/formatho.js" },
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "keywords": ["formatho", "json", "base64", "uuid", "hash", "cli", "developer-tools", "privacy", "offline", "ai-agent"],
+  "license": "MIT",
+  "homepage": "https://formatho.com",
+  "repository": { "type": "git", "url": "git+https://github.com/formatho/cli.git" },
+  "files": ["bin/", "README.md", "LICENSE"]
+}
