@@ -22,11 +22,18 @@ npx formatho uuid 10
 | `json <file\|->` | `npx formatho json package.json` |
 | `json-min <file\|->` | `cat x.json \| npx formatho json-min` |
 | `base64 encode\|decode` | `npx formatho base64 encode hi` |
+| `hex encode\|decode` | `npx formatho hex encode hi` |
 | `url encode\|decode` | `npx formatho url encode "a b&c"` |
-| `hash <algo>` | `npx formatho hash sha256 "secret"` |
+| `env [file\|-.env]` | `cat .env \| npx formatho env` |
 | `uuid [n]` | `npx formatho uuid 5` |
+| `ulid [n]` | `npx formatho ulid 3` |
 | `random [len]` | `npx formatho random 64` |
-| `slug` | `npx formatho slug "Hello World!"` |
+| `case <style> [text]` | `npx formatho case snake userIDFieldName` |
+| `slug [text]` | `npx formatho slug "Hello World!"` |
+| `regex <pattern> [text]` | `npx formatho regex "(\\d+)" "order 42"` |
+| `hash <algo> [text]` | `npx formatho hash sha256 "secret"` |
+| `hmac <algo> <key> [text]` | `npx formatho hmac sha256 key msg` |
+| `jwt [token]` | `npx formatho jwt $TOKEN` |
 | `timestamp [ts\|iso]` | `npx formatho timestamp 1756051200` |
 
 ## AI-agent friendly
@@ -38,7 +45,7 @@ npx formatho uuid 10
 
 ## Privacy
 
-No analytics. No config files. No phone-home. Read the source — it's ~150 lines using only Node built-ins.
+No analytics. No config files. No phone-home. Read the source — it's ~250 lines using only Node built-ins.
 
 ## License
 
